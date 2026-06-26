@@ -1,0 +1,98 @@
+{
+  "mode": "simulate",
+  "target": "/home/keyflab/rbs-sim/lab_data",
+  "host": "SNsociety",
+  "pid": 12405,
+  "started": "2026-06-25T22:50:45.572503+00:00",
+  "finished": "2026-06-25T22:50:45.620863+00:00",
+  "events": [
+    {
+      "ts": "2026-06-25T22:50:45.572542+00:00",
+      "phase": "T1490",
+      "action": "mock_anti_recovery",
+      "detail": "WOULD_EXECUTE: vssadmin delete shadows /all /quiet",
+      "path": ""
+    },
+    {
+      "ts": "2026-06-25T22:50:45.572551+00:00",
+      "phase": "T1490",
+      "action": "mock_anti_recovery",
+      "detail": "WOULD_EXECUTE: wmic shadowcopy delete",
+      "path": ""
+    },
+    {
+      "ts": "2026-06-25T22:50:45.572556+00:00",
+      "phase": "T1490",
+      "action": "mock_anti_recovery",
+      "detail": "WOULD_EXECUTE: bcdedit /set {default} recoveryenabled no",
+      "path": ""
+    },
+    {
+      "ts": "2026-06-25T22:50:45.572559+00:00",
+      "phase": "T1490",
+      "action": "mock_anti_recovery",
+      "detail": "WOULD_EXECUTE: rm -rf /var/backups/*",
+      "path": ""
+    },
+    {
+      "ts": "2026-06-25T22:50:45.572572+00:00",
+      "phase": "T1083",
+      "action": "discovery_start",
+      "detail": "extensions=['.bmp', '.csv', '.doc', '.docx', '.gz', '.jpeg', '.jpg', '.json', '.pdf', '.png', '.ppt', '.pptx', '.sql', '.tar', '.txt', '.xls', '.xlsx', '.xml', '.zip']",
+      "path": ""
+    },
+    {
+      "ts": "2026-06-25T22:50:45.572711+00:00",
+      "phase": "T1486",
+      "action": "encrypt_file",
+      "detail": "size=21",
+      "path": "/home/keyflab/rbs-sim/lab_data/budget.csv"
+    },
+    {
+      "ts": "2026-06-25T22:50:45.586753+00:00",
+      "phase": "T1486",
+      "action": "encrypt_file",
+      "detail": "size=38",
+      "path": "/home/keyflab/rbs-sim/lab_data/document1.txt"
+    },
+    {
+      "ts": "2026-06-25T22:50:45.597151+00:00",
+      "phase": "T1486",
+      "action": "encrypt_file",
+      "detail": "size=38",
+      "path": "/home/keyflab/rbs-sim/lab_data/photo_stub.jpg"
+    },
+    {
+      "ts": "2026-06-25T22:50:45.607541+00:00",
+      "phase": "T1486",
+      "action": "encrypt_file",
+      "detail": "size=45",
+      "path": "/home/keyflab/rbs-sim/lab_data/notes.json"
+    },
+    {
+      "ts": "2026-06-25T22:50:45.618201+00:00",
+      "phase": "T1486",
+      "action": "encryption_complete",
+      "detail": "files=4",
+      "path": ""
+    },
+    {
+      "ts": "2026-06-25T22:50:45.618215+00:00",
+      "phase": "T1071",
+      "action": "c2_attempt",
+      "detail": "127.0.0.1:9999",
+      "path": ""
+    },
+    {
+      "ts": "2026-06-25T22:50:45.620842+00:00",
+      "phase": "T1071",
+      "action": "c2_failed",
+      "detail": "[Errno 111] Connection refused",
+      "path": ""
+    }
+  ],
+  "files_discovered": 4,
+  "files_touched": 4,
+  "bytes_processed": 142,
+  "dry_run": false
+}
